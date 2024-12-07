@@ -1,6 +1,5 @@
 # Streamlit ilovasi
 import streamlit as st
-import pandas as pd
 import pickle
 import numpy as np
 
@@ -10,17 +9,7 @@ with open("airmodel2.pkl", "rb") as f:
 
 # Streamlit sarlavhasi
 st.title("Linear Regression Model for Dataset")
-st.write("100,000 qatorlik random dataset uchun bashorat qiluvchi ilova")
-
-# Datasetni yuklash
-dataset_file = "random_dataset.csv"
-try:
-    df = pd.read_csv(dataset_file)
-except FileNotFoundError:
-    st.error("Datasetni yaratish uchun kodni qayta ishlating.")
-else:
-    st.write("Datasetdan namunaviy ma'lumotlar:")
-    st.dataframe(df.head(20))
+st.write("Bashorat uchun ma'lumotlaringizni kiriting.")
 
 # Foydalanuvchi kiritadigan qiymatlar
 st.header("Bashorat uchun ma'lumot kiritish")
