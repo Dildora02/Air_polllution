@@ -8,7 +8,7 @@ with open("airmodel2.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Streamlit sarlavhasi
-st.title("Linear Regression Model for Dataset")
+st.title("Xavo sifatini bashorat qilish")
 st.write("Bashorat uchun ma'lumotlaringizni kiriting.")
 
 # Foydalanuvchi kiritadigan qiymatlar
